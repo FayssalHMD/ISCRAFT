@@ -1,0 +1,310 @@
+/* Hero Section Style */
+.hero {
+    background-color: #0a0e14;
+    --grid-color: rgba(0, 170, 255, 0.07);
+    --grid-size: 60px;
+    --line-thickness: 1px;
+    --glow-color: rgba(100, 180, 255, 0.12);
+    --vignette-color: rgba(0, 5, 10, 0.4);
+    background-image:
+        radial-gradient(ellipse at top, var(--vignette-color) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom, var(--glow-color) 0%, transparent 70%),
+        repeating-linear-gradient(
+            to right,
+            var(--grid-color) 0,
+            var(--grid-color) var(--line-thickness),
+            transparent var(--line-thickness),
+            transparent var(--grid-size)
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            var(--grid-color) 0,
+            var(--grid-color) var(--line-thickness),
+            transparent var(--line-thickness),
+            transparent var(--grid-size)
+        );
+    background-size:
+        100% 100%,
+        100% 100%,
+        var(--grid-size) var(--grid-size),
+        var(--grid-size) var(--grid-size);
+    background-position:
+        center top,
+        center bottom,
+        center center,
+        center center;
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        repeat,
+        repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.hero .hero-logo {
+    display: block;
+    height: 170px; 
+    max-width: 100%; 
+    margin: 0 auto 25px auto;
+    position: relative;
+    z-index: 4;
+}
+
+.hero-main-content {
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 0 0 18px rgba(0, 170, 255, 0.35);
+}
+
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.countdown {
+    font-family: 'Orbitron', sans-serif;
+    margin: 30px auto 40px auto;
+    padding: 20px;
+    background: rgba(10, 14, 20, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 170, 255, 0.2);
+    max-width: 90%;
+    width: fit-content;
+    backdrop-filter: blur(4px);
+}
+
+.countdown-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.countdown-digits {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #00aaff;
+    text-shadow: 0 0 8px rgba(0, 170, 255, 0.4);
+    background: rgba(0, 0, 0, 0.25);
+    padding: 8px 12px;
+    border-radius: 5px;
+    line-height: 1.1;
+    text-align: center;
+    width: 2.5ch;
+    box-sizing: border-box;
+    white-space: nowrap;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-label {
+    font-size: 0.75rem;
+    margin-top: 6px;
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.hero .cta-button {
+    margin-top: 10px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #0095d0;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.hero .cta-button:hover {
+    background-color: #00aaff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 170, 255, 0.35);
+}
+
+.hero-bg-shape,
+.scroll-indicator {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .hero .hero-logo {
+        height: 150px;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero p {
+        font-size: 1.05rem;
+        max-width: 550px;
+    }
+    
+    .countdown-number {
+        font-size: 2rem;
+        height: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 90vh;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        text-align: center;
+        --grid-size: 45px;
+    }
+    
+    .hero .hero-logo {
+        max-width: 100%; 
+    }
+    
+    .hero-text {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0 auto 25px auto;
+    }
+
+    .hero .cta-button {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+        margin: 0 auto;
+    }
+    
+    .countdown {
+        margin: 25px auto 35px auto;
+        padding: 15px;
+        max-width: 95%;
+        width: 95%;
+    }
+    
+    .countdown-title {
+        font-size: 1rem;
+    }
+    
+    .countdown-digits {
+        gap: 10px;
+    }
+    
+    .countdown-number {
+        font-size: 1.8rem;
+        padding: 6px 10px;
+        height: 2.6rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.7rem;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 70px 15px 40px;
+    }
+    
+    .hero .hero-logo {
+        height: 190px;
+        max-width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 0.95rem;
+    }
+    
+    .countdown-digits {
+        gap: 8px;
+    }
+    
+    .countdown-number {
+        font-size: 1.6rem;
+        padding: 5px 8px;
+        height: 2.4rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.65rem;
+    }
+}
+
+@keyframes scroll-wheel-animation {
+    0% { opacity: 1; top: 8px; }
+    25% { opacity: 1; top: 18px; }
+    50% { opacity: 0; top: 22px; }
+    75% { opacity: 0; top: 8px; }
+    100% { opacity: 1; top: 8px; }
+}

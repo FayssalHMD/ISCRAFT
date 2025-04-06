@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISCRAFT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style/navigation.css">
+    <link rel="stylesheet" href="./style/hero.css">
+    <link rel="stylesheet" href="./style/presentation.css">
+    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="./style/faq.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/animation.css">
+    <link rel="stylesheet" href="./style/partners.css">
+
+    <link rel="icon" type="image/png" href="./assets/images/ISCloadingeffect.png">
+</head>
+<body>
+
+    <!-- Loading Page Effect -->
+    <div id="preloader-overlay">
+        <div class="preloader-container">
+            <div class="preloader-spinner-border"></div>
+            <div class="preloader-logo-container">
+                <img src="./assets/images/ISCloadingeffect.png" alt="Logo" class="preloader-logo preloader-logo-color">
+                <img src="./assets/images/ISCloadingeffect.png" alt="Loading Logo" class="preloader-logo preloader-logo-grey">
+            </div>
+        </div>
+    </div>
+
+    <div id="main-site-content">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                 <a href="#" class="logo"><img src="./assets/images/ISCraft-logo.png" alt="Logo"></a>
+                 <div class="nav-links" id="nav-menu">
+                     <a href="#presentation" class="nav-link">About</a>
+                     <a href="#contact" class="nav-link">Contact</a>
+                     <a href="#faq" class="nav-link">FAQ</a>
+                     <a href="#register" class="nav-link"><button class="nav-button">Register</button></a>
+                 </div>
+                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                 </button>
+            </div>
+        </nav>
+
+      <!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-content-wrapper">
+        <!-- Replaced img with video -->
+        <video autoplay loop muted playsinline class="hero-logo">
+            
+            <source src="./assets/videos/animation.webm" type="video/mp4">
+            Your browser does not support the video tag. ISC Logo Animation.
+        </video>
+        <div class="hero-main-content">
+            <div class="hero-text">
+                <h1>ISCraft</h1>
+                <p>Where future engineers shape robotics and drive the industry forward !</p>
+                <div class="countdown">
+                     <div class="countdown-title">Registration Closes In</div>
+                     <div class="countdown-digits">
+                         <div class="countdown-item"><div class="countdown-number" id="days">00</div><div class="countdown-label">Days</div></div>
+                         <div class="countdown-item"><div class="countdown-number" id="hours">00</div><div class="countdown-label">Hours</div></div>
+                         <div class="countdown-item"><div class="countdown-number" id="minutes">00</div><div class="countdown-label">Minutes</div></div>
+                         <div class="countdown-item"><div class="countdown-number" id="seconds">00</div><div class="countdown-label">Seconds</div></div>
+                     </div>
+                </div>
+                <a href="#register" class="cta-button">Register Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Presentation Section -->
+        <section class="presentation" id="presentation">
+             <div class="presentation-content">
+                 <div class="presentation-text">
+                     <h2>Meet the Challenge: ISCraft 2025</h2>
+                     <p>
+                         Welcome to the inaugural ISCraft competition! Dive into the world of robotics by designing, building, and programming a functional robotic arm to tackle unique challenges. It's your platform to innovate, compete, and connect.
+                     </p>
+                     <a href="#register" class="cta-button">View Challenge Specs</a>
+                 </div>
+                 <div class="presentation-image-container">
+                     <img src="./assets/images/Presentation-Image.png" alt="Robotic arm Illustration">
+                 </div>
+             </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <h2 class="section-title">Why Participate?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-cogs card-icon"></i>
+                    <h3>Sharpen Your Skills</h3>
+                    <p>Apply theory to practice. Design, build, and program a functional robotic arm, tackling real-world engineering challenges and honing your technical abilities.</p>
+                 </div>
+                 <div class="feature-card">
+                    <i class="fas fa-users card-icon"></i>
+                    <h3>Connect & Collaborate</h3>
+                    <p>Work alongside talented peers. Share ideas, learn from others, and build valuable connections within the robotics community in a stimulating team environment.</p>
+                 </div>
+                 <div class="feature-card">
+                    <i class="fas fa-tools card-icon"></i> 
+                    <h3>Learn Through Workshops</h3> 
+                    <p>Benefit from expert-led workshops designed to provide guidance, enhance your skills, and help you tackle the challenges with confidence.</p> <!-- Changed paragraph -->
+                 </div>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section class="register-section" id="register">
+             <div class="register-container">
+                 <div class="register-visual">
+                     <img src="./assets/images/Blue-Robot.png" alt="Blue Robot ISCICO">
+                 </div>
+                 <div class="register-content">
+                     <h2 class="section-title ">Ready to Compete?</h2>
+                     <p >Don't miss your chance to be part of the Challenge. Check the rules, gather your team, and sign up today!</p>
+                     <div class="register-buttons">
+                         <a id="viewRulesBtn" class="cta-button-outline">View Rules</a>
+                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1lmFMYKtlsKjywD3jpAnOC7Oe5f_qGnuMc1ymUP2S16uT-w/viewform?usp=header" target="_blank" class="cta-button">Register Now</a>
+                     </div>
+                 </div>
+                 <div class="register-visual">
+                     <img src="./assets/images/ISCICA.png" alt="Pink Robot ISCICA">
+                 </div>
+             </div>
+        </section>
+
+    <!-- FAQ Section -->
+<section class="faq-section" id="faq">
+    <div class="faq-container">
+        <h2 class="section-title anim-fade-scale">Frequently Asked Questions</h2>
+        <div class="faq-list">     
+             <!-- Item 2 -->
+             <div class="faq-item anim-fade-up-delay">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                     <span>Who can participate in ISCRAFT?</span>
+                     <i class="fas fa-chevron-down faq-icon"></i>
+                 </button>
+                 <div class="faq-answer" id="faq-answer-2" role="region" aria-hidden="true">
+                     <div class="faq-answer-content">
+                         <p>The competition is open to university students and officially registered university scientific clubs in Algeria.</p>
+                     </div> 
+                 </div>
+             </div>
+
+             <!-- Item 3 -->
+             <div class="faq-item anim-fade-up-delay-more">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                     <span>What are the team composition rules?</span>
+                     <i class="fas fa-chevron-down faq-icon"></i>
+                 </button>
+                 <div class="faq-answer" id="faq-answer-3" role="region" aria-hidden="true">
+                     <div class="faq-answer-content"> 
+                         <p>Each team must consist of <span class="bolded">4 members</span> or <span class="bolded">less</span>.</p>
+                     </div> 
+                 </div>
+             </div>
+
+             <!-- Item 4 -->
+             <div class="faq-item anim-fade-up-delay-more">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                   <span>What are the phases of the competition?</span>
+                   <i class="fas fa-chevron-down faq-icon"></i>
+               </button>
+               <div class="faq-answer" id="faq-answer-4" role="region" aria-hidden="true">
+                   <div class="faq-answer-content">
+                       <p>The competition is divided into <span class="bolded">two phases</span>:</p>
+                       <p><span class="bolded">Preliminary Round:</span> Participants must submit a video showcasing their robotic arm in action.</p>
+                       <p><span class="bolded">The qualified teams</span> will participate in online workshops about robotic arms and automation before competing on-site to complete the given challenges.</p>
+
+                     
+
+                   </div>
+               </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="faq-item anim-fade-up-delay-more">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                   <span>How do I register for the competition?</span>
+                   <i class="fas fa-chevron-down faq-icon"></i>
+               </button>
+               <div class="faq-answer" id="faq-answer-5" role="region" aria-hidden="true">
+                   <div class="faq-answer-content">
+                       <p>To register, click the <span class="bolded">Register</span> button located above. This will take you to the online form that needs to be filled out by <span class="bolded">one representative</span> from your team.</p>
+                   </div> 
+               </div>
+             </div>
+
+             <!-- Item 6 -->
+             <div class="faq-item anim-fade-up-delay-more">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                   <span>Will there be workshops before the competition?</span>
+                   <i class="fas fa-chevron-down faq-icon"></i>
+               </button>
+               <div class="faq-answer" id="faq-answer-6" role="region" aria-hidden="true">
+                   <div class="faq-answer-content"> 
+                       <p><span class="bolded">Yes</span>, the qualified teams will be invited to attend online workshops focused on robotic arms and automation to help prepare for the on-site competition.
+                    </p>
+                   </div> 
+               </div>
+             </div>
+
+
+             <!-- Item 8 -->
+             <div class="faq-item anim-fade-up-delay-more">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                   <span>Where will the competition take place?</span>
+                   <i class="fas fa-chevron-down faq-icon"></i>
+               </button>
+               <div class="faq-answer" id="faq-answer-8" role="region" aria-hidden="true">
+                   <div class="faq-answer-content"> 
+                       <p>The competition will take place at the <span class="bolded">ISC Club</span> at the institue of <span class="bolded">Electrical Engineering and Electornics - Boumerdes</span></p>
+                   </div> 
+               </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="faq-item anim-fade-up-delay-more">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                   <span>When will the competition be held?</span>
+                   <i class="fas fa-chevron-down faq-icon"></i>
+               </button>
+               <div class="faq-answer" id="faq-answer-9" role="region" aria-hidden="true">
+                    <div class="faq-answer-content"> 
+                       <p>The competition will be held in the <span class="bolded">third week</span> of <span class="bolded">June 2025</span>.</p>
+                   </div> 
+               </div>
+            </div>
+
+        </div> <!-- /.faq-list -->
+    </div> <!-- /.faq-container -->
+</section> <!-- /.faq-section -->
+
+        <!-- Partners Section -->
+        <section class="partners-section" id="partners" style="display:none;">
+            <div class="partners-container">
+                <h2 class="section-title anim-fade-scale">Thanks to Our Partners</h2>
+                <p class="partners-intro anim-fade-up">
+                    We are incredibly grateful for the support of our partners who help make ISCraft possible. Their contribution is vital to the success of this competition and the development of future engineers.
+                </p>
+                <div class="partners-logos">
+                    <div class="partner-item anim-fade-up">
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="Partner Name 1">
+                            <img src="./assets/images/Blue-Robot.png" alt="Partner 1 Logo">
+                        </a>
+                    </div>
+                    <div class="partner-item anim-fade-up">
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="Partner Name 2">
+                            <img src="./assets/images/Blue-Robot.png" alt="Partner 2 Logo">
+                        </a>
+                    </div>
+                    <div class="partner-item anim-fade-up">
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="Partner Name 3">
+                            <img src="./assets/images/Blue-Robot.png" alt="Partner 3 Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h2 class="section-title anim-fade-scale">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info anim-fade-up">
+                        <h3><i class="fas fa-atom"></i> Who We Are</h3>
+                        <p>We are the <strong>Inelectronics Student Club</strong>, a passionate group of students dedicated to exploring the world of robotics and engineering. We believe in innovation, collaboration, and pushing the boundaries of technology.</p>
+                        <p class="club-quote"><em>"Experience develop share!"</em></p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Institute Of Electrical Engineering & Electronics - Boumerdes</p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:inelectronics.club@univ-boumerdes.dz">inelectronics.club@univ-boumerdes.dz</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-social anim-fade-up-delay">
+                        <h3><i class="fas fa-share-alt"></i> Connect With Us</h3>
+                        <p>Follow our journey and get competition updates:</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/InelectronicsStudentClub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/inelectronics.student.club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-map anim-fade-up-delay-more">
+                        <h3><i class="fas fa-location-arrow"></i> Our Location</h3>
+                        <div class="map-placeholder">
+                             <iframe
+                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.515918112807!2d3.4696710757775686!3d36.758188972259106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e68edd6855003%3A0x4db0e7b46ceec8ce!2sInelectronics%20Student%20Club!5e0!3m2!1sen!2sdz!4v1743264622591!5m2!1sen!2sdz"
+                                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                 referrerpolicy="no-referrer-when-downgrade" title="Club Location Map">
+                             </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="#presentation">About</a>
+                    <a href="#register">Rules</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/InelectronicsStudentClub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/inelectronics.student.club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copy">Copyright © <strong>Inelectronics student club</strong> 2025</p>
+            </div>
+        </footer>
+
+    </div> <!-- Closing main-site-content -->
+
+
+<!-- Temporary for the Specification sheet -->
+    <div id="rulesPopup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Rules & Specifications</h2>
+            <p>The detailed Specification Sheet is being finalized and will be available very soon!</p>
+            <p>Please check back shortly or contact us for more details</p>
+            <button class="popup-close-btn-main">Got It!</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
