@@ -213,55 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn("FAQ container ('#faq') not found.");
     }
 
-    // --- Rules Pop-up Logic ---
-    const viewRulesButton = document.getElementById('viewRulesBtn');
-    const rulesPopup = document.getElementById('rulesPopup');
-    const closePopupButtons = document.querySelectorAll('.popup-close-btn-main'); // Gets the 'Got It!' button
-
-    function openPopup() {
-        if (rulesPopup) {
-            rulesPopup.classList.add('show');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    function closePopup() {
-        if (rulesPopup) {
-            rulesPopup.classList.remove('show');
-            document.body.style.overflow = '';
-        }
-    }
-
-    // Temp Pop-up
-    if (viewRulesButton) {
-        viewRulesButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Good practice for buttons
-            openPopup();
-        });
-    } else {
-        console.warn("Button with ID 'viewRulesBtn' not found.");
-    }
-
-    if (rulesPopup) {
-        closePopupButtons.forEach(button => {
-            button.addEventListener('click', closePopup);
-        });
-
-        rulesPopup.addEventListener('click', function(event) {
-            if (event.target === rulesPopup) {
-                closePopup();
-            }
-        });
-    } else {
-        console.warn("Popup element with ID 'rulesPopup' not found.");
-    }
-
-     // Close pop-up via Escape key (listener on the document)
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape" && rulesPopup && rulesPopup.classList.contains('show')) {
-            closePopup();
-        }
-    });
-
+ 
 
 }); // --- End DOMContentLoaded ---
